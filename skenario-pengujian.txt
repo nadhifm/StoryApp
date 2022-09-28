@@ -1,0 +1,312 @@
+LoginViewModelTest
+
+1 Ketika berhasil login
+- Memastikan memanggil LoginUseCase.invoke(email, password).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+2 Ketika gagal login
+- Memastikan memanggil LoginUseCase.invoke(email, password).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+
+RegisterViewModelTest
+
+1 Ketika berhasil register
+- Memastikan memanggil RegisterUseCase.invoke(name, email, password).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+2 Ketika gagal register
+- Memastikan memanggil RegisterUseCase.invoke(name, email, password).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+
+SplashViewModelTest
+
+1 Ketika pengguna sudah login
+- Memastikan memanggil CheckTokenUseCase.invoke().
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+2 Ketika pengguna belum login
+- Memastikan memanggil CheckTokenUseCase.invoke().
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+
+ProfileViewModelTest
+
+1 Ketika pengguna sudah Login
+- Memastikan memanggil GetNameUseCase.invoke()
+- Memastikan nama sesuai dengan yang diharapkan.
+
+2 Ketika berhasil logout
+- Memastikan memanggil LogoutUseCase.invoke().
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+
+AddStoryViewModelTest
+
+1 Ketika berhasil menambahkan cerita
+- Memastikan memanggil AddStoryUseCase.invoke(file, description, location).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+2 Ketika gagal menambahkan cerita
+- Memastikan memanggil AddStoryUseCase.invoke(file, description, location).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+
+MapViewModelTest
+
+1 Ketika berhasil mendapatkan data cerita
+- Memastikan memanggil GetStoriesUseCase.invoke().
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+2 Ketika gagal mendapatkan data cerita
+- Memastikan memanggil GetStoriesUseCase.invoke().
+- Memastikan message sesuai dengan yang diharapkan.
+
+
+HomeViewModelTest
+
+1 Ketika berhasil mendapatkan data paging cerita
+- Memastikan memanggil GetStoriesPagingDataUseCase.invoke().
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+
+LoginUseCaseTest
+
+1 Ketika berhasil login
+- Memastikan memanggil AppRepository.login(email, password).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+2 Ketika gagal login
+- Memastikan memanggil AppRepository.login(email, password).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+
+RegisterUseCaseTest
+
+1 Ketika berhasil register
+- Memastikan memanggil AppRepository.register(name, email, password).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+2 Ketika gagal register
+- Memastikan memanggil AppRepository.register(name, email, password).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+
+CheckTokenUseCaseTest
+
+1 Ketika pengguna sudah login
+- Memastikan memanggil AppRepository.checkToken().
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+2 Ketika pengguna belum login
+- Memastikan memanggil AppRepository.checkToken().
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+
+GetNameUseCaseTest
+
+1 Ketika pengguna sudah Login
+- Memastikan memanggil AppRepository.getName().
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+
+LogoutUseCaseTest
+
+1 Ketika berhasil logout
+- Memastikan memanggil AppRepository.logout().
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+
+AddStoryUseCaseTest
+
+1 Ketika berhasil menambahkan cerita
+- Memastikan memanggil AppRepository.addStory(file, description, location).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+2 Ketika gagal menambahkan cerita
+- Memastikan memanggil AppRepository.addStory(file, description, location).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+
+GetStoriesUseCaseTest
+
+1 Ketika berhasil mendapatkan data cerita
+- Memastikan memanggil AppRepository.getStories().
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+2 Ketika gagal mendapatkan data cerita
+- Memastikan memanggil AppRepository.getStories().
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+
+GetStoriesPagingDataUseCaseTest
+
+1 Ketika berhasil mendapatkan data paging cerita
+- Memastikan memanggil AppRepository.getStoriesPagingData().
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+
+AppRepositoryImplTest
+
+1 Ketika berhasil login
+- Memastikan memanggil ApiService.login(loginRequest).
+- Memastikan memanggil DataStoreManager.saveToken(loginResultResponse.token).
+- Memastikan memanggil DataStoreManager.saveName(loginResultResponse.name).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+2 Ketika gagal login
+- Memastikan memanggil ApiService.login(LoginRequest).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+3 Ketika berhasil register
+- Memastikan memanggil ApiService.register(registerRequest).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+4 Ketika gagal register
+- Memastikan memanggil ApiService.register(registerRequest).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+5 Ketika pengguna sudah login
+- Memastikan memanggil DataStoreManager.token.
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+6 Ketika pengguna belum login
+- Memastikan memanggil DataStoreManager.token.
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+7 Ketika pengguna sudah Login
+- Memastikan memanggil DataStoreManager.name.
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+8 Ketika berhasil logout
+- Memastikan memanggil dataStoreManager.saveToken("").
+- Memastikan memanggil dataStoreManager.saveName("").
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+9 Ketika berhasil menambahkan cerita
+- Memastikan memanggil DataStoreManager.token.
+- Memastikan memanggil AppRepository.addStory(token, photo, description, lat, lon).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+10 Ketika gagal menambahkan cerita
+- Memastikan memanggil DataStoreManager.token.
+- Memastikan memanggil AppRepository.addStory(token, photo, description, lat, lon).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+11 Ketika berhasil mendapatkan data cerita
+- Memastikan memanggil DataStoreManager.token.
+- Memastikan memanggil ApiService.getStories(token).
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Success.
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+
+12 Ketika gagal mendapatkan data cerita
+- Memastikan memanggil DataStoreManager.token.
+- Memastikan memanggil ApiService.getStories().
+- Memastikan mengembalikan Resource.Loading.
+- Memastikan mengembalikan Resource.Error.
+- Memastikan message tidak null.
+- Memastikan message sesuai dengan yang diharapkan.
+
+13 Ketika berhasil mendapatkan data paging cerita
+- Memastikan data tidak null.

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Story App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="already_have_an_account">Sudah memiliki akun?</string>
+    <string name="don_t_have_an_account">Belum memiliki akun?</string>
+    <string name="loading">Memuat</string>
+    <string name="logo">Logo</string>
+    <string name="photo">Foto</string>
+    <string name="share_your_best_moment">Bagikan momen terbaikmu</string>
+    <string name="latest_stories">Cerita Terbaru</string>
+    <string name="account">Aku</string>
+    <string name="created_date">Tanggal Dibuat</string>
+    <string name="description">Deskripsi</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="home">Home</string>
+    <string name="profile">Profil</string>
+    <string name="add_new_story">Tambah Cerita Baru</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="logout">Keluar</string>
+    <string name="add_story">Tambah Cerita</string>
+    <string name="permission_not_granted">Izin Tidak Diberikan</string>
+    <string name="input_photo_description">Masukkan Deskripsi Foto</string>
+    <string name="password_must_be_at_6_characters_long">Panjang Kata Sandi Harus Minimal 6 Karakter</string>
+    <string name="email_format_must_be_valid">Format Email Harus Valid</string>
+    <string name="input_your_email">Masukan Email Anda</string>
+    <string name="input_your_password">Masukan Password Anda</string>
+    <string name="input_your_name">Masukan Nama Anda</string>
+    <string name="choose_image_first">Pilih Gambar Terlebih Dahulu</string>
+    <string name="empty_text">Tidak Ada Data</string>
+    <string name="appwidget_text">Story App Banner</string>
+    <string name="see_location">Lihat Lokasi</string>
+    <string name="share_location">Bagikan Lokasi</string>
+    <string name="you_must_enable_gps">Anda harus mengaktifkan GPS</string>
+</resources>
